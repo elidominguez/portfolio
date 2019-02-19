@@ -1,6 +1,126 @@
-body{
-background-color: #f7f7f7; 
+/* ---- reset ---- */
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* ---- typography ---- */
+  
+  body {
+    color: #111;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 147%;
+    font-style: normal;
+    font-weight: lighter;
+  }
+
+  
+  h1{
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
 }
-.projects {background-color: #171e29;
+h2{
+    font-family: Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #18a380;
+}
+
+  h3 {}
+
+  a{
+	color:#18a380;
+    text-decoration: #18a380;
+    text-decoration-style: underline;
+    font-weight: bold;
+    border-bottom: 3px solid;
+    font-family: Helvetica, Arial, sans-serif;
+}
+a:hover{color: #18a380;
+    text-decoration: none;
+    background-color: #18a380;
+    color: #ffffff;
+}
+  
+  /* ---- layout - common styles of layout, no specificity ---- */
+  
+  
+  .main-footer {
+    color: white;
+    padding: 60px 0;
+    background: #111;
+  }
+  
+
+  .page-header{
+    background: #f7f7f7;
+    border: solid 2px #000000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.inline-list li {display: inline-block;
+vertical-align: center;}
+
+img{
+    text-decoration: none}
+img:hover{
+    opacity: .7;
+    -moz-box-shadow:    0px 4px 0px 0px #18a380;
+    -webkit-box-shadow: 0px 4px 0px 0px #18a380;
+    box-shadow:         0px 4px 0px 0px #18a380;
+}
+
+#photography {
+   background-color:  #282e2c
+}
+#main-paragraph{
+    font-size: 18px;
 
 }
+  
+  /* ---- components ---- */
+  
+  
+  /* ---- section ---- */
+
+  .container {
+    margin: 40px 40px;
+    max-width: 1024px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+  
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+  
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+      .container {margin: 0 auto;}
+  
+  }
+  
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+  
+  }
