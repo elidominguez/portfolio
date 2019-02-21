@@ -31,6 +31,7 @@ h2 {
     font-weight: bold;
     font-size: 24px;
     color: #18a380;
+    padding: 2rem 0;
 }
 
 a {
@@ -50,8 +51,8 @@ a:hover{color: #18a380;
   
 .page-header{
     background: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,7 +60,6 @@ a:hover{color: #18a380;
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
     z-index: 99999;
 }
 
@@ -72,14 +72,19 @@ a:hover{color: #18a380;
 .page-header ul li a:hover {
   color: #111;
   border-bottom: solid 4px #18a380;
+  /* transition: all 1s linear; */
   
 }
-
+.main-navigation{
+  width: 100%;
+}
 .main-navigation-header {
   display: flex;
   align-items: center; 
   justify-content: center;
   padding: 10px;
+  padding-left: 0;
+  margin-right: 17.5px;
 }
 
 .main-navigation-header li {
@@ -94,9 +99,11 @@ a:hover{color: #18a380;
 }
 
 #photography {
-  background-color:  #282e2c;
+  /* background-color:  #282e2c; */
+  background-color: #191d1b;
   padding: 40px;
 }
+
 
 /* .photography-list {display: flex;
   justify-content: space-between;
@@ -117,12 +124,53 @@ img:hover{
     box-shadow:         0px 4px 0px 0px #18a380;
 }
 
-.main-footer {
-  color: white;
+.copyright {
+  background-color: #eee;
+  color: #111;
   padding: 60px 0;
-  background: #111;
+  text-align: center;
 }
   
+#contact{
+  padding: 100px;
+  text-align: center;
+  line-height: 42px;
+}
+
+#contact h2{
+  font-size: 42px;
+  line-height: 62px;
+}
+
+#contact p{
+  font-size: 32px;
+  line-height: 52px;
+}
+
+.main-footer {
+  background-color: #f9f9f9;
+}
+
+.social-media {
+  font-size: 35px;
+  text-align: center;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.social-media a{
+  text-decoration: none;
+  color: rgb(182, 182, 182);
+}
+
+.social-media-items {
+  display: flex;
+  flex-direction: row;
+  width: 10rem;
+  justify-content: space-between;
+}
+
   /* ---- components ---- */
 
   .highlight {
@@ -135,16 +183,17 @@ img:hover{
     font-weight: 100;
   }
 
-  .main-title {
+  #main-title {
     padding: 20px;
+    display: flex;
+    align-self: flex-start;
   }
   
   #main-paragraph {
-    margin-top: 120px;
     font-size: 42px;
     background-color: #fafafa;
-    line-height: 56px;
-    padding: 100px;
+    line-height: 62px;
+    padding: 140px 100px 100px 100px;
   }
   
   #main-paragraph p, .main-contact {
@@ -154,9 +203,21 @@ img:hover{
   }
   
   
+  .photography-paragraph {
+    display: flex;
+    justify-content: center;
+  }
 
+  .photography-paragraph p{
+    color: rgb(107, 107, 107);
+    padding: 50px;
+    text-align: center;
+    font-size: 22px;
+    line-height: 28px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
 
-  
   
   /* pinterest */
   
@@ -164,6 +225,7 @@ img:hover{
     columns: 300px 3;
     column-gap: 10px;
     row-gap: 10px;
+    margin-top: 40px;
 }
 
 .pinterest .box{
@@ -189,16 +251,21 @@ img{
     margin: 40px 40px;
     max-width: 1024px;
   }
+
+  .container-flex{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+  }
   
   section {
-    margin-bottom: 20px;
-    padding-top: 20px;
+    padding: 2rem 2rem;
   }
   
   
   /* Small devices (landscape phones, 576px and up) */
   @media (min-width: 576px) {
-  
   }
   
   /* Medium devices (tablets, 768px and up) */
